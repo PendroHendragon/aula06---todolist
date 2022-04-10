@@ -2,7 +2,7 @@ import Nav from "../src/components/nav";
 import { useState, useEffect } from "react";
 import Listan from "../src/components/listan.js";
 import "bulma/css/bulma.css";
-
+import Navbar from "../src/components/navbar";
 
 
 
@@ -46,7 +46,7 @@ export default function Home() {
         
     },[])
 
-    const storage = useEffect(function(){
+    useEffect(function(){
         const storage1 = window.localStorage;
         if(lista.length>0){
             storage1.setItem(dbName,JSON.stringify(lista));
@@ -78,10 +78,10 @@ export default function Home() {
 
 
     return (
-        <div className="container">
+        <div>
 
 
-            <Nav />
+            <Navbar />
             <div id="to-do" style={mainStyle}>
                 <div style={divStyle}>
                     <label htmlFor="task" className="label">Add Task:</label>

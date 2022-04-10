@@ -24,7 +24,7 @@ export default function Item({item,index}) {
             <div>
                 <label className="checkbox is-flex is-align-items-center" htmlFor={"check-" + index}>
                     <input onClick={(e)=>{checked(e)}} type="checkbox" id={"check-" + index} />
-                    <p style={Style}>{item}</p>
+                    <p style={Style}>{index+":"+item}</p>
                 </label>
             </div>
         </li>
