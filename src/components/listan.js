@@ -4,15 +4,15 @@ export default function Listan({ lista }) {
     
 
     return (
-        <div>
+        <ul>
             {
                 
                 lista.map((item, index) => {
-                    return (<Item item={item} key={index} index={index} />);
+                    return (<Item item={item} key={item.id} index={index} />);
                 })
                 
             }
-        </div>
+        </ul>
         
     );
 
