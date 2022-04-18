@@ -24,6 +24,11 @@ const titleStyle = {
     margin: "10px 0px"
 }
 
+const listStyle = {
+    width: '80%',
+    margin: 'auto'
+}
+
 
 
 export default function Home() {
@@ -117,7 +122,7 @@ export default function Home() {
                 <h3 className="title ">My tasks:</h3>
             </div>
 
-            <div>
+            <div style={listStyle}>
 
                 <Listan lista={lista} />
             </div>
